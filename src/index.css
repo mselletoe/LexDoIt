@@ -1039,10 +1039,9 @@ td:nth-child(6):hover {
   width: 300px;
   height: 180px;
   position:relative;
-  margin-top: 120px;
+  margin-top: 20px;
   left:450px;
   align-items: center;
-  top:10px;
 }
 
 .notaskimg{
