@@ -275,7 +275,7 @@ function Dashboard() {
     <>
     <div class="outer-container">
       <div className="mainpage">
-        <a href="https://www.youtube.com/watch?v=GLpdY-57Dro" target="_blank" rel="noopener noreferrer">
+        <a href="https://lex-do-it.vercel.app/dashboard" target="_blank" rel="noopener noreferrer">
           <img className="githublogo" src={githublogo} alt="GitHub Logo" />
         </a>
         <p id="dashboard">Dashboard</p>
