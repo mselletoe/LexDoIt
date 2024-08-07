@@ -1,0 +1,1302 @@
+/*side screen*/
+
+.first{
+  flex: 0 0 15%;
+  background-color:#5E1B89;
+  height:100vh;
+  
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow:auto;
+}
+
+
+.head {/*LexDoIt header*/
+  color: white;
+  font-family: "dm sans";
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: -5px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lexdoit {
+  text-decoration: none;
+}
+
+
+
+
+.ldilogow{/*LexDoIt header logo*/
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+  position: relative;
+  top:4px;
+}
+
+
+
+/*options*/
+.inFirst ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inFirst a {
+  color: #F2F2F2;
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  padding: 18px 60px;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 15px;
+  right: 15px;
+}
+
+.inFirst a:hover,
+.inFirst a.selected {
+  background-color: #571980;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.inFirst a.selected {
+  background: linear-gradient(45deg, #FF7F4D, #F85B33);
+  border-radius: 15px;
+}
+
+
+
+/*my profile*/
+
+.eloissa{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10px 90px  repeat(2, 25px) 10px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #6A1E99;
+  border-radius: 20px;
+  position: relative;
+  top: 240px;
+  left: 25px;
+  height:160px;
+  width: 180px;
+}
+
+#eloissaf {
+  color: #9D70BB;
+  font-family: "lato";
+  font-size: 16px;
+  font-weight: 600;
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+#eloissa {
+  color: #9D70BB;
+  font-family: "lato";
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.pfp {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  grid-area: 2 /1 /3/2;
+  margin-left: 50px;
+}
+
+
+
+
+.outer-container {
+  background-color: #5E1B89; 
+  height: 100vh; 
+  width: 100vw; 
+}
+
+
+
+
+/*MAIN SCREEN*/
+.mainpage{
+  background-color: #F2F2F2;
+  height: 100vh;
+  flex: 0 0 85%;
+  overflow: auto;
+  border: 10px solid #5E1B89;
+  border-radius: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.tablecontainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 1150px; 
+  margin: -230px auto 20px ; 
+}
+
+.header {
+  background: linear-gradient(20deg, #DCCAE8, #FFD2C2, #C8ADDC);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  height: 210px;
+  width: 100%;
+  margin: 60px auto 20px;
+  z-index: 5; 
+  position: relative; 
+  top: -159px;
+}
+
+
+
+
+
+/*main screen header*/
+#dashboard{
+  display: inline-block;
+  color: #E84D2A;
+  font-family: "roboto slab";
+  font-weight:600;
+  font-size: 30px;
+  font-weight: 700;
+  z-index: 8; 
+  position: relative;
+  top: 14px;
+  left: 50px;
+}
+
+.githublogo{
+  width:40px;
+  height:40px;
+  margin-left: 15px;
+  position: absolute;
+  top: 42px;
+  left: 1130px;
+  display: inline-block;
+  z-index: 11;
+  cursor: pointer;
+  transition: background-color 0.8s, transform 0.8s;
+}
+
+.githublogo:hover{
+  transform: scale(1.1);
+}
+
+
+.githublogo:active{
+  transform: scale(1);
+}
+
+
+/*PLATE*/
+
+.plate{
+  display:grid;
+  width: 860px;
+  height: 170px;
+  background: linear-gradient(45deg, #F4512C, #5E1B89);
+  border-radius: 20px;
+  grid-template-columns: 0.8fr 1.5fr 0.9fr 1fr ;
+  grid-template-rows: 95px 75px;
+  position: relative;
+  top: -270px; 
+  left: 195px;
+  z-index: 10;
+}
+
+/*grid positions*/
+.hello{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.platedispimage{
+  grid-area: 1 / 3 / 3 / 4;
+}
+.nameentry{
+  grid-area: 1 / 2 / 2 / 5;
+}
+.clock{
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+
+.hello{/*greetings*/
+  color: #f2f2f2;
+  font-family: "lato";
+  font-weight:800;
+  font-size: 45px;
+  position:relative;
+  top:35px;
+  left: 30px;
+}
+
+.nameentry{
+  color: #f2f2f2;
+  font-family: "lato";
+  font-weight:800;
+  font-size: 46px;
+  position:relative;
+  top:33px;
+  left:-4px;
+}
+
+.nameentry input{
+  outline:none;
+  border:none;
+  color: #f2f2f2;
+  font-family: "lato";
+  font-weight:800;
+  font-size: 46px;
+  width:280px;
+  background-color: transparent;
+}
+
+.inputusername::placeholder{
+  color:rgba(242, 242, 242, 0.4);
+}
+
+
+/*plate display image*/
+.platedispimage img{
+  width:210px;
+  height:210px;
+  position:relative;
+  top:-27px;
+}
+
+
+
+
+/*date and time display*/
+
+.clock {
+  font-family: "lato";
+  color: #f2f2f2;
+  width:400px;
+  text-align: center;
+  position: relative;
+  top:8px;
+  background-color: transparent;
+}
+
+.time {
+  font-size: 25px;
+  font-weight: 700;
+  display: inline; 
+}
+
+.day-date {
+  font-size: 15px;
+  display: inline;
+  margin-left: 15px;
+}
+
+
+
+
+
+/*DROPDOWNS*/
+/*dropdown box for status and priority*/
+.dropdown-menuSALL, .dropdown-menu, .dropdown-menuPALL{
+  position: absolute;
+  top: 50px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height:140px;
+  width:130px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*dropdowns om the table*/
+.dropdown-menu { 
+  left: 5px;
+}
+
+.dropdown-menuSALL {
+  left: 530px; 
+}
+
+.dropdown-menuPALL {
+  left: 850px;
+}
+
+
+.status-cell, .priority-cell {
+  text-align: center;
+  width:130px;
+  position: relative;
+}
+.status-text , .priority-cell{
+  width:130px;
+  cursor: pointer;
+}
+
+
+/*status and priority buttons*/
+.dropdown-menuSALL button, .dropdown-menu button, .dropdown-menuPALL button{
+  font-family: "lato";
+  margin: 6px;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  width: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+
+/*status buttons*/
+.status-button1 {
+  background: #F4512C;
+}
+.status-button2 {
+  background: #FE7E4D;
+}
+.status-button3 {
+  background: #FFCBB8;
+}
+
+
+/*status buttons hovers*/
+.status-button1:hover {
+  background-color: #E84D2A;
+}
+.status-button2:hover {
+  background-color: #F27849;
+}
+.status-button3:hover {
+  background-color: #F7C5B2;
+}
+
+
+/*status buttons on table*/
+.status-text.status-pending, .status-text.status-in-progress, .status-text.status-done{
+  border: none;
+  font-size: 15px;
+  padding: 5px 28px; 
+  text-align: center;
+  border-radius: 50px;
+}
+
+.status-text.status-done:hover {
+  background-color: #E84D2A;
+}
+
+.status-text.status-in-progress:hover {
+  background-color: #F27849;
+}
+
+.status-text.status-pending:hover {
+  background-color: #F7C5B2;
+}
+
+
+.status-text.status-pending {
+  color: #E84D2A;
+  background-color: #FFCBB8;
+}
+.status-text.status-in-progress {
+  background-color: #FE7E4D;
+}
+.status-text.status-done {
+  background-color: #F4512C;
+}
+
+
+
+
+
+/*priority buttons*/
+.priority-button1 {
+  background: #5E1B89;
+}
+.priority-button2 {
+  background: #9D71BC;
+}
+.priority-button3 {
+  background: #D8C6E4;
+}
+
+
+/*priority buttons hovers*/
+.priority-button1:hover {
+  background-color: #571980;
+}
+.priority-button2:hover {
+  background-color: #956BB3;
+}
+.priority-button3:hover {
+  background-color: #D0BEDB;
+}
+
+
+
+/*priority buttons on table*/
+.priority-text.priority-high, .priority-text.priority-medium, .priority-text.priority-low{
+  border: none;
+  font-size: 15px;
+  padding: 5px 25px; 
+  text-align: center;
+  border-radius: 50px;
+}
+.priority-text.priority-high {
+  background-color: #5E1B89;
+}
+
+.priority-text.priority-medium {
+  background-color: #9D71BC;
+}
+
+.priority-text.priority-low {
+  background-color: #D8C6E4;
+}
+
+.priority-text.priority-high:hover {
+  background-color: #571980;
+}
+
+.priority-text.priority-medium:hover {
+  background-color: #956BB3;
+}
+
+.priority-text.priority-low:hover {
+  background-color: #D0BEDB;
+}
+
+
+
+
+/*"Select Priority"*/
+.priority-text {
+  cursor: pointer;
+}
+.priority-placeholder {
+  color:#C4A9D6;
+}
+
+
+
+
+
+/*Date and Time on table*/
+.dueOnTable{
+  color:#5E1B89;
+  background-color: transparent;
+  font-family: "lato";
+  font-weight: 700;
+  font-size: 14px;
+  height: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.dueOnTableContainer {
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+
+/*Date and Time for selected tasks*/
+.menuALLTIME{/*BOX*/
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height:40px;
+  width:240px;
+  position: absolute;
+  top: 50px;
+  left: 745px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.dueALL{/*DROPDOWN*/
+  font-family: "lato";
+  font-weight: 700;font-size: 15px;
+  outline: none;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  color:#5E1B89;
+  cursor: pointer;
+  width:200px;
+  padding: 5px 5px;
+}
+
+
+
+/*x buttons per row*/
+.dltbutton button{
+  display: flex;
+  background-color: transparent;
+  color: #767676;
+  margin-left: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.xbutton:hover{
+  background-color: transparent;
+  color: #E84D2A;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
+}
+
+
+/*NAVIGATION FOR SELECTED TASKS*/
+
+.navforall{
+  display: grid;
+  position: relative;
+  width: 100%px;
+  grid-template-columns: 15fr repeat(4, 2fr) 4fr;
+  grid-template-rows: 60px;
+  gap: 15px;
+  align-items: center;
+}
+
+
+.todoicon{
+  width:35px;
+  height:35px;
+  margin-left: 15px;
+  position: absolute;
+}
+
+
+#todolist { /*"To Do"*/
+  color: #5E1B88;
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+
+/*Add Task*/
+#addtask {
+  font-family: "Lato";
+  color: white;
+  font-size: 17px;
+  border-radius: 8px;
+  background-color: #F4512C;
+  height: 35px;
+  width: 110px;
+  transition: background-color 0.8s, transform 0.8s;
+  cursor: pointer;
+  grid-area: 1 / 6 / 2 / 7;
+}
+
+#addtask:hover {
+  background-color: #E84D2A;
+  transform: scale(1.1);
+}
+
+#addtask:active{
+  background-color: #F4512C;
+  transform: scale(1);
+}
+
+#addtask .faPlus{
+  margin-right: 4px;
+}
+
+#status, #due, #priority, #delete {
+  font-family: "Lato";
+  color: #9D71BC;
+  border-color: #D8C6E4;
+  border: 3px solid;
+  border-radius: 8px;
+  background-color: transparent;
+  height: 30px;
+  width: 90px;
+  transition: background-color 0.8s, transform 0.8s;
+  cursor: pointer;
+}
+
+#due .faCalendarDays, #status .faSpinner, #delete .faTrashCan, #priority .faFire{
+  margin-right: 4px;
+}
+
+
+#status:hover:not(:disabled), #due:hover:not(:disabled), #priority:hover:not(:disabled), #delete:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+#status:active:not(:disabled), #due:active:not(:disabled), #priority:active:not(:disabled), #delete:active:not(:disabled) {
+  background-color: #D7D0DB;
+  transform: scale(1);
+}
+
+#status:disabled, #due:disabled, #priority:disabled, #delete:disabled {
+  cursor:default;
+  opacity: 0.6;
+}
+
+
+/*TO DO LIST MAIN TABLE*/
+
+.todolist{
+  width: 100%;
+  position: relative;
+  top: 20px;
+  padding-bottom: 30px;
+}
+
+.slctnboxforall{
+  width: 20px;
+}
+
+.namehead{
+  width: 365px;
+}
+
+.statushead{
+  width: 145px;
+}
+
+.duehead{
+  width: 200px;
+}
+
+.dlthead{
+  width: 20px;
+}
+
+.priohead{
+  width: 130px;
+}
+
+.namehead, .statushead, .duehead, .priohead, .dlthead{
+  color:#9D71BC;
+}
+
+
+
+
+
+
+
+
+/*LAYOUT FOR TABLE*/
+th, td {
+  font-family: "Lato";
+  color: white;
+  background-color: #F7F7F7;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  text-align: left;
+  border-radius: 5px;
+  height: 28px;
+}
+
+th {
+  background-color: transparent;
+}
+
+td:hover{
+  background-color: #F0F0F0;
+}
+
+td:nth-child(1):hover,
+td:nth-child(6):hover {
+  background-color: transparent;
+}
+
+
+/*Edit function for task name*/
+.inputName{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #5E1B88;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 800;
+  width:380px;
+  margin-left: 5px;
+}
+
+.inputName::placeholder{
+  color:#C4A9D6;
+}
+
+
+
+/*Add Task Form and popup messages */
+
+/*low opacity background*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(63, 45, 89, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+
+
+/*Add Task Form Box*/
+.overlaycontent {
+  position: relative;
+  background: #f2f2f2;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align:left;
+  width: 400px;
+  height: 320px;
+}
+
+
+/*labels*/
+.nameLabel {
+  display:block
+}
+
+.statusLabel {
+  padding: 9px;
+  font-family: "lato";
+  font-weight: 700;
+  color: #FF8252;
+  font-size: 12px;
+}
+
+.dueLabel {
+  display: block;
+  padding: 9px;
+  margin-top: 3px;
+  font-family: "lato";
+  font-weight: 700;
+  color: #FF8252;
+  font-size: 12px;
+}
+
+.priorityLabel {
+  display: block;
+  padding: 9px;
+  margin-top: 10px;
+  font-family: "lato";
+  font-weight: 700;
+  color: #FF8252;
+  font-size: 12px;
+}
+
+
+
+
+/*Input box of task name*/
+.overlaycontent input[type="text"]{
+  width: 92%;
+  padding: 9px;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  margin-left: 5px;
+  font-size: 25px;
+  font-family: "lato";
+  background-color: transparent;
+  color:#F4512C;
+  font-weight: 900;
+  border: none; 
+  outline: none;
+  border-radius: 8px;
+}
+
+/*"untitled"*/
+.overlaycontent input::placeholder{
+  color:#FFC1A8;
+}
+
+/*Status, Priority, and Due content box*/
+.selectstatus{  
+  margin-left: 32px;
+  font-family: "lato";
+  font-weight: 900;
+  font-size: 15px;
+}
+.selectprio{
+  margin-left: 25px;
+  font-family: "lato";
+  font-weight: 900;
+  font-size: 15px;
+}
+.dueLabel input[type="datetime-local"]{
+  margin-left: 44px;
+}
+
+/*Status, Priority, and Due content box layout*/
+.selectstatus, .selectprio,
+.overlaycontent input[type="datetime-local"] {
+  display: inline;
+  width: 70%;
+  padding: 9px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  outline: none;
+  border-radius: 20px;
+  font-family: "lato";
+  color:#E84D2A;
+}
+
+
+/*hovers for add task form box*/
+.overlaycontent input:hover{
+  background-color:#EBEBEB;
+}
+
+.overlaycontent .dueLabel input[type="datetime-local"]:hover{
+  background-color:#FFEBE3;
+}
+
+.overlaycontent select:hover{
+  background-color:#FFEBE3;
+}
+
+
+
+
+/*x button for add box*/
+.close-button{
+  cursor: pointer;
+  color: #F4512C;
+  position: absolute;
+  left: 420px;
+  padding-top:3px;
+}
+
+.close-button-icon {
+  font-size: 20px;
+}
+
+.close-button:hover{
+  background-color: #EBEBEB;
+  color: #E84D2A;
+  border-radius: 5px;
+}
+
+
+
+
+
+/*Add button*/
+.add-button{
+  height:30px;
+  width:120px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f2f2f2;
+  background-color: #5E1B89;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "lato";
+  font-weight: 600;
+  position: absolute;
+  top:335px;
+  left: 185px;
+  padding-top:2px;
+}
+
+.add-button:hover{
+  color:#EBEBEB;
+  background-color:#571980; 
+}
+
+
+
+
+
+/*Delete Confirmation Message*/
+/*Add Validation Message*/
+
+.conmessage, .valmessage{
+  font-family: "lato";
+  color:#99331C;
+  position: relative;
+  background: #f2f2f2;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align:left;
+  width: 380px;
+  height: 120px;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.conmessage p{
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+
+
+
+/*Submit Button*/
+.submitButton, .okbutton {
+  height: 30px;
+  width:100px;
+  background: #5E1B89;
+  font-family: "lato";
+  color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top:110px;
+  left: 105px;
+}
+
+.okbutton{
+  left:170px
+}
+
+.submitButton:hover,
+.okbutton:hover {
+  background: #571980;
+}
+
+
+
+/*Cancel button*/
+.cancelButton {
+  background: #F4512C;
+  color: #f2f2f2;
+  height: 30px;
+  width:100px;
+  font-family: "lato";
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top:110px;
+  left:230px;
+}
+
+.cancelButton:hover {
+  background: #E84D2A;
+}
+
+
+
+/*No Task Display*/
+
+.notaskdisp{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 180px;
+  position:relative;
+  margin-top: 120px;
+  left:450px;
+  align-items: center;
+  top:10px;
+}
+
+.notaskimg{
+  width: 120px;
+  height: 120px;
+}
+
+#notasktxt1{
+  font-family: "lato";
+  font-style: italic;
+  color: #9D71BC;
+  position: absolute;
+  top:100px;
+}
+
+#notasktxt2{
+  font-family: "lato";
+  font-style: italic;
+  color: #9D71BC;
+  position: absolute;
+  top:120px;
+}
+
+
+
+/* Progress Tracker */
+.ProgressTracker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5px 15px;
+  background-color: rgba(242, 242, 242, 0.4);
+  border-radius: 15px;
+  height: 140px;
+  width: 155px;
+  position: absolute;
+  left: 665px;
+  top: 10px;
+}
+
+.ProgressTracker h2 {
+  font-family: "lato";
+  color: #f2f2f2;
+  font-size: 17px;
+  font-weight: 900;
+  text-align: center; 
+}
+
+.progress-bar-wrapper {
+  display: grid;
+  grid-template-columns: 30px 1fr; 
+  align-items: center;
+  margin-bottom: 10px;
+  gap:10px;
+  height: 20px;
+  width: 150px;
+}
+
+.progress-percentage {
+  font-family: "lato";
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  color: white; 
+}
+
+.progress-bar {
+  background-color: rgba(242, 242, 242, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.progress-bar.done span {
+  background-color: #F4512C;
+}
+
+.progress-bar.in-progress span {
+  background-color: #FF7F4D;
+}
+
+.progress-bar.pending span {
+  background-color: #FFCBB8;
+}
+
+
+
+
+
+
+/*NOTES SCREEN*/
+/*No Task Display*/
+
+.notes, .trashmainpage{
+  flex: 0 0 84%;
+  background-color:#f2f2f2;
+  height:100vh;
+  display: flex;
+  position:relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 10px solid #5E1B89;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.undercons, .todoman{
+  width: 190px;
+  height: 190px;
+}
+
+.nonotes p, .nodlttask p{
+  font-family: "lato";
+  font-size: 1em;
+  font-weight: 600;
+  color: #9D71BC;
+  position: relative;
+}
+
+.nonotes h2{
+  margin-bottom: 1px;
+  font-size: 2em;
+  font-family: "lato";
+  font-weight: 900;
+  color: #5E1B89;
+}
+
+
+
+
+
+
+
+/*TRASH TABLE*/
+
+#trash{
+  display: flex;
+  color: #F4512C;
+  font-family: "roboto slab";
+  font-weight:600;
+  font-size: 35px;
+  position: absolute;
+  top: 27px;
+  left: 70px;
+  margin-bottom: -40px;
+}
+
+.deletedlist{
+  width: 1100px;
+  position: absolute;
+  top: 120px;
+  left: 58px;
+  padding-bottom: 0px;
+}
+
+.deletedlist th input[type="checkbox"],
+.deletedlist td input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.deletedlist th:first-child,
+.deletedlist td:first-child {
+  width: 20px; 
+  text-align: center;
+}
+
+.deletedlist th{
+  color:#B0B0B0;
+}
+
+.deletedlist td{
+  font-family: "Lato";
+  background-color: #DBDBDB;
+  color: #6E6E6E;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px;
+  text-align: left;
+  border-radius: 7px;
+  height: 28px;
+}
+
+.deletedlist td.deleted-status-text,
+.deletedlist td.deleted-priority-text {
+  border-radius: 7px;
+  background-color: #DBDBDB;
+  color: #6E6E6E;
+  cursor: default;
+}
+
+
+
+
+/*DELETE PERMANENTLY BUTTONS*/
+
+.deleteforever, .emptytrash {
+  display: inline-block;
+  font-family: "Lato";
+  border-radius: 8px;
+  background-color: transparent;
+  height: 30px;
+  font-weight: 600;
+  width: 150px;
+  transition: background-color 0.8s, transform 0.8s;
+  cursor: pointer;
+  position: absolute;
+  top:75px;
+}
+
+/* Hover and active states */
+.deleteforever:hover {
+  background-color: #EBE2F1;
+  transform: scale(1.1);
+}
+
+.emptytrash:hover  {
+  background-color: #571980;
+  transform: scale(1.1);
+}
+
+.deleteforever:active, .emptytrash:active {
+  transform: scale(1);
+}
+
+.deleteforever {
+  border: 3px solid;
+  color: #5E1B89;
+  left:800px;
+}
+.emptytrash {
+  background-color: #5E1B89;
+  color: white;
+  left:970px;
+}
+
+.deleteforever.disabled {
+  background-color: #EBEBEB;
+  cursor: not-allowed; 
+  color: #9F9F9F; 
+  border: 1px solid #9F9F9F;
+  transition: none;
+  pointer-events: none;
+}
